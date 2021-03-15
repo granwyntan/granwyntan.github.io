@@ -20,7 +20,7 @@ let selectElement = document.getElementById('date');
 selectElement.innerHTML = "Today's date: "+formatDate;
 
 function myFunction() {
-    var x = document.getElementById("Demo");
+    var x = document.getElementById("Yes");
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
     } else {
