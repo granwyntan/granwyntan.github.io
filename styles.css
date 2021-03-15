@@ -15,6 +15,13 @@
 
 /* Header/logo Title */
 
+::selection {
+    background: lightgray; /* WebKit/Blink Browsers */
+  }
+::-moz-selection {
+    background: lightgray; /* Gecko Browsers */
+}
+
 .header {
     text-align: center;
     /* background-image: url();*/
