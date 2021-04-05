@@ -13,141 +13,29 @@
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </head>
   <body>
-    <style>
-      .topnav {
-        background-color: black;
-        width: 100%;
-      }
-
-      .topnav .icon {
-        margin: 16px 16px;
-        color:white;
-        float: right;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        display: none;
-      }
-
-      .first {
-        height: 70px;
-        width: 70px;
-      }
-
-      .topnav a.active {
-        color: gray;
-      }
-      @media screen and (max-width: 600px) {
-        .topnav a:not(:first-child) {display: none;}
-        .topnav a.icon {
-          display: block;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive .icon {
-          position: absolute;
-          float: right;
-          top: 0;
-          right: 0;
-        }
-        .topnav.responsive a {
-          float: none;
-          display: block;
-        }
-      }
-      .nav-icon {
-        margin: 1em;
-        width: 40px;
-      }
-
-      .nav-icon:after, 
-      .nav-icon:before, 
-      .nav-icon div {
-        background-color: #fff;
-        border-radius: 3px;
-        content: '';
-        display: block;
-        height: 5px;
-        margin: 7px 0;
-        transition: all 0.1s ease-in-out;
-        transition-delay: 0s;
-      }
-
-      .nav-icon.open:before {
-        transform: translateY(12px) rotate(135deg);
-      }
-
-      .nav-icon.open:after {
-        transform: translateY(-12px) rotate(-135deg);
-      }
-
-      .nav-icon.open div {
-        transform: scale(0);
-      }
-      /* .nav-icon:hover:before {
-        transform: translateY(12px) rotate(135deg);
-      }
-
-      .nav-icon:hover:after {
-        transform: translateY(-12px) rotate(-135deg);
-      }
-
-      .nav-icon:hover div {
-        transform: scale(0);
-      } */
-    </style>
-    <script>
-      function theFunction() {
-        var x = document.getElementById("myTopnav");
-        // var y = document.getElementById("menuIcon");
-        if (x.className === "w3-bar w3-black w3-card w3-top topnav") {
-          x.className += " responsive";
-          x.style = "position:fixed;top:0;"
-          y.style.transform = "translateY(-12px) rotate(-135deg);"
-        } else {
-          x.className = "w3-bar w3-black w3-card w3-top topnav";
-          x.style = "position:fixed;top:0; display:flex; align-items:center; overflow:hidden;"
-          // y.style.transform = "translateY(-12px) rotate(-135deg);"
-        }
-        const menuBtn = document.querySelector('.nav-icon');
-        let menuOpen = false;
-        menuBtn.addEventListener('click', () => {
-          if(!menuOpen) {
-            menuBtn.classList.add('open');
-            menuOpen = true;
-          } else {
-            menuBtn.classList.remove('open');
-            menuOpen = false;
-          }
-        });
-      }
-      </script>
     <div class="w3-bar w3-black w3-card w3-top topnav" id="myTopnav" style="position:fixed; top:0; display:flex; align-items:center; overflow:hidden;">
       <a href="index.html">
-        <img src="Assets/Gran New.png" class="w3-bar-item w3-button w3-hover-black w3-hover-text-grey first" style="margin-left: 16px;">
+        <img src="Assets/Gran New.png" class="w3-bar-item w3-button w3-hover-black w3-hover-text-grey first">
       </a>
-      <a href="index.html" class="w3-mobile active w3-left w3-bar-item w3-button w3-hover-black w3-hover-text-grey w3-padding-16" style="pointer-events: none; cursor: default;">Home</a>
+      <a href="index.html" class="w3-mobile active w3-left w3-bar-item w3-button w3-hover-black w3-hover-text-grey w3-padding-16">Home</a>
       <a href="profile.html" class="w3-mobile w3-left w3-bar-item w3-button w3-hover-black w3-hover-text-grey w3-padding-16">Profile</a>
       <a href="portfolio.html" class="w3-mobile w3-left w3-bar-item w3-button w3-hover-black w3-hover-text-grey w3-padding-16">Portfolio</a>
-      <a href="javascript:void(0);" class="icon" onclick="theFunction()" style="margin-right: 16px;">
+      <a href="javascript:void(0);" class="w3-right icon" style="margin-right: 16px;">
         <!-- <i class="fa fa-bars"></i> -->
-        <div class="nav-icon">
-          <div></div>
+        <div class="container" onclick="myFunction(this);">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
       </a>
-      <!-- <div class="nav-icon">
-        <div></div>
-      </div> -->
     </div>
     <br>
     
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;padding-top: 30px;">
-
+      
       <!-- The Grid -->
       <div class="w3-row-padding">
-
         <div>
           <img src="Assets/Gran ADMT Isometric.jpeg" alt="GRAN" width="100%" style="align-content: center;">
         </div>
@@ -160,7 +48,8 @@
           </div>
         </div>
         <div class="w3-container">
-          <p class="w3-large"><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-dark-grey"></i><b>Student, Astronomer, Designer, Coder</b></p>
+          <p class="w3-xlarge"><b>Granwyn Tan</b></p>
+          <p class="w3-large"><i class="fa fa-desktop fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>Student, Astronomer, Designer, Coder</b></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>Singapore, Singapore</p>
           <a href="mailto:granwyn_tan@s2019.ssts.edu.sg" target="_blank"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>granwyn_tan@s2019.ssts.edu.sg</a>
           <hr>

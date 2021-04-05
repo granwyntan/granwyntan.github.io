@@ -15,3 +15,144 @@
 html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Quicksand", sans-serif
 }
+
+.topnav {
+  background-color: black;
+  width: 100%;
+}
+
+.topnav .icon {
+  margin: 16px 16px;
+  color:white;
+  float: right;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+}
+
+.first {
+  height: 70px;
+  width: 70px;
+  margin-left: 16px;
+}
+
+.topnav a.active {
+  color: gray;
+  pointer-events: none; 
+  cursor: default;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: translateY(12px) rotate(135deg);
+    transform: translateY(12px) rotate(135deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+/* .bar {
+    border-radius: 3px;
+    border: solid 2px white;
+    margin-bottom: 5px;
+    width: 36px;
+    transition: 0.5s;
+  }
+  
+  .header__hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 3em;
+  }
+  
+  .click .hamburger__bar1 {
+    transform: rotate(45deg) translate(0, -12px);
+  }
+  
+  .click .hamburger__bar2 {
+    opacity: 0;
+  }
+  
+  .click .hamburger__bar3 {
+    transform: rotate(-45deg) translate(0, 12px);
+  } */
+  
+/* .nav-icon {
+  margin: 1em;
+  width: 40px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all 0.5 ease-in-out;
+  transition-delay: 0;
+}
+
+.nav-icon.open:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon.open:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon.open div {
+  transform: scale(0);
+}  */
+/* .nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.nav-icon:hover div {
+  transform: scale(0);
+}*/
