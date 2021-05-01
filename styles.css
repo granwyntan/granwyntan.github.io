@@ -58,6 +58,7 @@ footer {
 #twt:hover .icon{ background: #1DA1F2; }
 #in:hover .icon{ background: #0077b5; }
 #gh:hover .icon{ background: #333; }
+#gmail:hover .icon { background: black;}
 
 #insta .icon { color: #E1306C; }
 #fb .icon { color: #1778F2; }
