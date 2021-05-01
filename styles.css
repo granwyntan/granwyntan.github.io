@@ -50,7 +50,7 @@ footer {
 .button:hover {
   width: 200px;
 }
-#insta, #fb, #twt, #in {
+#insta, #fb, #twt, #in, #gh {
   margin-right: 10px;
 }
 #insta:hover .icon{ background: #E1306C; }
@@ -64,12 +64,14 @@ footer {
 #twt .icon { color: #1DA1F2; }
 #in .icon { color: #0077b5; }
 #gh .icon { color: #333; }
+#gmail .icon { color: black;}
 
 #insta span { color: #E1306C; }
 #fb span { color: #1778F2; }
 #twt span { color: #1DA1F2; }
 #in span { color: #0077b5; }
 #gh span { color: #333; }
+#gmail span { color: black }
 
 .button .icon {
   display: inline-block;
