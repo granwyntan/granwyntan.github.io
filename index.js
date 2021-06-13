@@ -60,3 +60,14 @@ function theFunction() {
     y.classList.toggle("click");
   }
 }
+// var $elem = $('.signature');
+// // var element = document.getElementById('signature');
+// var in_view = new Waypoint.Inview({
+//     element: $elem[0],
+//     enter: function() {
+//         $elem.addClass('start');
+//     },
+//     exit: function() {  // optionally
+//         $elem.removeClass('start');
+//     }
+// });

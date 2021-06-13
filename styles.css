@@ -16,6 +16,36 @@ html,body,h1,h2,h3,h4,h5,h6,footer {
     font-family: "Quicksand", sans-serif
 }
 
+#signature {
+  stroke-dasharray: 2026;
+  stroke-dashoffset: 2026;
+  animation: sign 4s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation: sign 4s ease-in-out forwards;
+	   -moz-animation: sign 4s ease-in-out forwards;
+	    -ms-animation: sign 4s ease-in-out forwards;
+	     -o-animation: sign 4s ease-in-out forwards;
+	        animation: sign 4s ease-in-out forwards;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-moz-keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .attr {
   text-align: center;
   align-content: center;
